@@ -15,13 +15,6 @@ class NotifierCommand extends Command
         ->setName('notify')
         ->setDescription('send a simple message to Slack')
         ->addOption(
-            'team',
-            null,
-            InputOption::VALUE_REQUIRED,
-            'Your slack team/organization name',
-            null
-            )
-        ->addOption(
             'token',
             null,
             InputOption::VALUE_REQUIRED,
@@ -64,7 +57,7 @@ class NotifierCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
 
-        $client = new \Slack\Client($input->getOption('team'),$input->getOption('token'));
+        $client = new \Slack\Client($input->getOption('token'));
         $slack = new \Slack\Notifier($client);
         $message = new \Slack\Message\Message($input->getArgument('message'));
 

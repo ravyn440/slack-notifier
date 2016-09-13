@@ -1,5 +1,5 @@
 {
-    "name": "polem/slack-notifier",
+    "name": "ravyn440/slack-notifier",
     "description": "A simple slack wrapper",
     "require": {
         "guzzle/guzzle": "~3",
@@ -8,8 +8,8 @@
     },
     "authors": [
         {
-            "name": "Paul-Emile MINY",
-            "email": "paulemile.miny@gmail.com"
+            "name": "Ernie Souhrada",
+            "email": "ravyn@deadbunny.com"
         }
     ],
     "autoload": {
