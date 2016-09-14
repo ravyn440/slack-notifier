@@ -55,14 +55,13 @@ class Notifier
     public function notify(MessageInterface $message, $debug = false)
     {
         $payload = $this->serializer->serialize($message, 'json');
-
         $request = $this->client->post(
-            '/api/post.chatMessage',
+            '',
             array(),
             $payload,
             array('debug' => $debug)
         );
-
-        $request->send();
+        $request->setHeader('Content-Type', 'text/plain');
+        $response = $request->send();
     }
 }

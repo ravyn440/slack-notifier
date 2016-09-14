@@ -81,7 +81,7 @@ class NotifierTest extends \PHPUnit_Framework_TestCase
         $client->expects($this->once())
             ->method('post')
             ->with(
-                $this->equalTo('/api/chat.postMessage'),
+                $this->equalTo('/services/T000000000/B00000000/t123456789abcdef'),
                 $this->anything(),
                 $this->equalTo($expectedDatas),
                 $this->anything()

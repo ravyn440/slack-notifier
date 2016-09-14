@@ -18,7 +18,7 @@ class NotifierCommand extends Command
             'token',
             null,
             InputOption::VALUE_REQUIRED,
-            'Your slack auth token', null
+            'Your slack webhook path info', null
             )
 
         ->addOption(
@@ -68,7 +68,7 @@ class NotifierCommand extends Command
 
             $message->setIconEmoji($input->getOption('emoji'));
         }
-        $slack->notify($message);
+        $slack->notify($message, true);
         $output->writeln("Sent!");
     }
 }
