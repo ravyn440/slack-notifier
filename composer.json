@@ -1,6 +1,7 @@
 {
     "name": "ravyn440/slack-notifier",
     "description": "A simple slack wrapper",
+    "version": "0.3.0",
     "require": {
         "guzzle/guzzle": "~3",
         "symfony/serializer": "~2.4",
