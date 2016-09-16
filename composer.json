@@ -11,6 +11,10 @@
         {
             "name": "Ernie Souhrada",
             "email": "ravyn@deadbunny.com"
+        },
+        {
+            "name": "Paul-Emile MINY",
+            "email": "paulemile.miny@gmail.com"
         }
     ],
     "autoload": {
